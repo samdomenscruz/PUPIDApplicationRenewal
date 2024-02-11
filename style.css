@@ -1,0 +1,310 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/pup-background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #df5151;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #df5151;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    background-color: #df5151;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;;
+}
+
+button:hover {
+    border: none;
+}
+
+.about {
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 40px;
+}
+
+.about-list div {
+    background: #df5151;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 25px;
+    transition: background-color 0.5s, transform 0.3s ease-in-out;
+}
+
+.about-list div:hover {
+    background-color: #6d2727;
+    transform: scale(1.05);
+}
+
+.about-list div p{
+    font-size: medium;
+    text-align: justify;
+}
+
+form {
+    overflow: auto;
+    height: 450px;
+}
+
+form::-webkit-scrollbar {
+    display: none;
+}
+
+form section {
+    background: #f5e7e745;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 800px;
+    text-align: center;
+}
+
+.radio-group div {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0;
+    height: 100px;
+    margin: 15px;
+}
+
+.radio-group div label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio-group div input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.text-field-group label {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 3px;
+}
+
+.text-field-group input[type="text"] {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+#dob {
+    margin-top: 15px;
+}
+
+.text-field-group select {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.text-field-group input[type="date"] {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.text-field-group input[type="email"] {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.text-field-group textarea {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.emergency-contact label {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 3px;
+}
+
+.emergency-contact * {
+    display: block;
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+input[type="submit"] {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #df5151;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #df5151;
+  }
+
+.contact {
+    padding: 30px 0;
+    margin-top: 0px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin: 0px 20px 20px 20px;
+}
+
+.contact-list div {
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 25%;
+    border: 2px solid #df5151;
+    transition: background-color 0.5s, transform 0.3s ease-in-out;
+}
+
+.contact-list div:hover {
+    background-color: #6d2727;
+    transform: scale(1.05);
+}
+
+.contact-list div p{
+    font-size: medium;
+    text-align: center;
+    margin: 5px;
+}
+
+.contact-list div h2 {
+    margin-bottom: 5px;
+}
+
+.contact-list div img {
+    border-radius: 50px;
+}

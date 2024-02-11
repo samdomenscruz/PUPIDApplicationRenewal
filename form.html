@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    
+    <title>ID Application / Replacement</title>
+
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <div class="navbar">
+    <img src="images/pup-forms-logo.svg" alt="PUP Forms Logo" class="logo" href="index.html">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    </div>
+
+    <div class="content">
+    <h1>ID Application / Replacement</h1>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbwRJj0JvqfpFKzx5SfNX8nVXQh2AtwOwClNIZKJi5TXuQuPOX16WnB17iB7hY7IlPo2Dw/exec">
+        <section>
+            <h2>Type of Application</h2>
+            <div class="radio-group">
+                <div>
+                    <label><input type="radio" id="Transferee" name="application-type" value="Transferee" required> Transferee</label>
+                    <label><input type="radio" id="LF" name="application-type" value="Late Filling" required> Late Filling</label>
+                    <label><input type="radio" id="OI" name="application-type" value="Old ID" required> Old ID</label>
+                </div>
+
+                <div>
+                    <label><input type="radio" id="Shiftee" name="application-type" value="Shiftee" required> Shiftee</label>
+                    <label><input type="radio" id="Damaged" name="application-type" value="Damaged" required> Damaged</label>
+                    <label><input type="radio" id="COE" name="application-type" value="Correction of Entry" required> Correction of Entry</label>
+                </div>
+                <div>
+                    <label><input type="radio" id="LHS" name="application-type" value="LHS" required> LHS</label>
+                    <label><input type="radio" id="SHS" name="application-type" value="SHS" required> SHS</label>
+                    <label><input type="radio" id="Undergrad" name="application-type" value="Undergrad" required> Undergrad</label>
+                    <label><input type="radio" id="COL" name="application-type" value="College of Law" required> College of Law</label>
+                </div>
+                <div>
+                    <label><input type="radio" id="GS" name="application-type" value="Graduate School" required> Graduate School</label>
+                    <label><input type="radio" id="OU" name="application-type" value="Open University" required> Open University</label>
+                    <label><input type="radio" id="IOT" name="application-type" value="Institute of Technology" required> Institute of Technology</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>ID Information</h2>
+            <div class="text-field-group">
+                <label>Student Number</label>
+                <input type="text" id="student-number" name="student-number" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" placeholder="Format: XXXX-XXXXX-XX-X" title="Only letters, numbers, and hyphen are allowed" required>
+
+                <label>First Name</label>
+                <input type="text" id="first-name" name="first-name" pattern="[A-Za-z]+(\.[A-Za-z]+)?( [A-Za-z]+(\.[A-Za-z]+)?)*" placeholder="Sample: Juan" title="Only letters, spaces, and periods are allowed" required>
+
+                <label>Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name" pattern="[A-Za-z]+(\.[A-Za-z]+)?( [A-Za-z]+(\.[A-Za-z]+)?)*" placeholder="Sample: Andres" title="Only letters, spaces, and periods are allowed" required>
+
+                <label>Last Name</label>
+                <input type="text" id="last-name" name="last-name" pattern="[A-Za-z]+(\.[A-Za-z]+)?( [A-Za-z]+(\.[A-Za-z]+)?)*" placeholder="Sample: Dela Cruz" title="Only letters, spaces, and periods are allowed" required>
+
+                <label>Gender: </label>
+                <div>
+                    <label><input type="radio" id="Male" name="gender-type" value="Male" required> Male</label>
+                    <label><input type="radio" id="Female" name="gender-type" value="Female" required> Female</label>
+                    <label><input type="radio" id="Others" name="gender-type" value="Others" required> Others</label>
+                </div>
+
+                <label id="dob">Date of Birth</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" placeholder="YYYY/MM/DD" required>
+
+                <label>College</label>
+                    <select id="college" name="college" required>
+                        <option value="" disabled selected>Select your college</option>
+                        <option value="LHS">LHS</option>
+                        <option value="SHS">SHS</option>
+                        <option value="OUS">OUS</option>
+                        <option value="CAF">CAF</option>
+                        <option value="CADBE">CADBE</option>
+                        <option value="CAL">CAL</option>
+                        <option value="CBA">CBA</option>
+                        <option value="COC">COC</option>
+                        <option value="CCIS">CCIS</option>
+                        <option value="COED">COED</option>
+                        <option value="CE">CE</option>
+                        <option value="CHK">CHK</option>
+                        <option value="CL">CL</option>
+                        <option value="CPSPA">CPSPA</option>
+                        <option value="CSSD">CSSD</option>
+                        <option value="CS">CS</option>
+                        <option value="CTHTM">CTHTM</option>
+                        <option value="DCvET">DCvET</option>
+                        <option value="DCET">DCET</option>
+                        <option value="DEET">DEET</option>
+                        <option value="DECET">DECET</option>
+                        <option value="DICT">DICT</option>
+                        <option value="DMET">DMET</option>
+                        <option value="DOMT">DOMT</option>
+                        <option value="DRET">DRET</option>
+                    </select>
+
+                <label>Course, Year, and Section</label>
+                <input type="text" id="course-year-section" name="course-year-section" pattern="[A-Za-z0-9-]+" placeholder="Sample: BSIT 3-5" title="Only letters, numbers, and hyphen are allowed" required>
+
+                <label>Home Address</label>
+                <textarea id="home-address" name="home-address" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required></textarea>
+                
+                <label>Phone or Mobile Number</label>
+                <input type="text" id="mobile-number" name="mobile-number" pattern="09[0-9]{9}" placeholder="Format: 09XXXXXXXXX" title="Mobile number must start with 09 and have a total of 11 digits" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Sample: pupforms@gmail.com" name="email" required>
+            </div>
+        </section>
+
+        <section class="emergency-contact">
+            <h2>Emergency Contact Information</h2>
+            <label>Complete Name</label>
+            <input type="text" id="complete-name" name="complete-name" pattern="[A-Za-z ]+" title="Only letters are allowed" required>
+
+            <label>Phone or Mobile Number</label>
+            <input type="text" id="emergency-mobile-number" name="emergency-mobile-number" pattern="09[0-9]{9}" placeholder="Format: 09XXXXXXXXX" title="Mobile number must start with 09 and have a total of 11 digits" required>
+
+            <label>Home Address</label>
+            <textarea id="emergency-address" name="emergency-address" pattern="[A-Za-z0-9-]+" title="Only letters, numbers, and hyphen are allowed" required></textarea>
+            
+        </section>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+  </body>
+
+</html>
